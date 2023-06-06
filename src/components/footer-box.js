@@ -35,7 +35,6 @@ class FooterBox extends React.Component {
                             <div className={'bg'}/>
                             <div className={'inner'}>
                                 <div className={'title'}>{box.title}</div>
-                                <div className={'text'}>{box.text}</div>
                                 <div className={'footer-box-inner-bottom'}>
                                     {box.button &&  box.button.type === 'modal' ? <div className={'button button-simple'} role={'button'} onClick={this.handleModalOpen} tabIndex={0} onKeyDown={this.handleModalOpen} id={box.button.id}>{box.button.text}</div> : <Button class={'simple'} id={box.button.id} type={'internal'} url={box.button.href} text={box.button.text}/>}
                                     {box.socials && <div className={'socials'}>
